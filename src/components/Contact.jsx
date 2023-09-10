@@ -66,99 +66,50 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
-      >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText} style={{ marginBottom: '30px' }}>Contact.</h3>
 
+        <div className="mb-5">
+          <div className="flex items-center mb-3">
+            <img src={phone} alt="phone" className="w-8 h-5 rounded-lg mr-5" />
+            <p className={styles.sectionSubText}>+1 530-636-5789 / +91 8454063824</p>
+          </div>
 
-        <div className="flex items-center"> {/* Wrap the image and text in a container */}
-          <img style={{ marginBottom: '17px' }}
-            src={phone} // Replace with the actual path to your image
-            alt="abcaaa"
-            className="w-8 h-5 rounded-lg mr-5" // You can adjust the styling as needed
-          />
-          <p className={styles.sectionSubText} style={{ marginBottom: '17px' }}>+1 530-636-5789 / +91 8454063824</p>
+          <div className="flex items-center mb-3">
+            <img src={mail} alt="mail" className="w-8 h-5 rounded-lg mr-5" />
+            <p className={styles.sectionSubText}>pranjalpimpale4@gmail.com</p>
+          </div>
         </div>
 
-
-        <div className="flex items-center"> {/* Wrap the image and text in a container */}
-          <img style={{ marginBottom: '23px' }}
-            src={mail} // Replace with the actual path to your image
-            alt="mail"
-            className="w-8 h-5 rounded-lg mr-5" // You can adjust the styling as needed
-          />
-          <p className={styles.sectionSubText} style={{ marginBottom: '23px' }}>pranjalpimpale4@gmail.com</p>
-        </div>
-
-
-        <div className="flex items-center">
+        <div className="flex items-center mb-5">
           <a href="https://www.linkedin.com/in/pranjal-pimpale-7094a919b/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={linkedin} // Replace with the actual path to your LinkedIn image
-              alt="LinkedIn"
-              className="w-12 h-12 rounded-lg mr-8" // Added margin-right (mr-2) for spacing
-            />
+            <img src={linkedin} alt="LinkedIn" className="w-12 h-12 rounded-lg mr-8" />
           </a>
 
           <a href="https://github.com/pranjalpimpale4" target="_blank" rel="noopener noreferrer">
-            <img
-              src={github1} // Replace with the actual path to your GitHub image
-              alt="GitHub"
-              className="w-12 h-12 rounded-lg mr-8" // Added margin-right (mr-2) for spacing
-            />
+            <img src={github1} alt="GitHub" className="w-12 h-12 rounded-lg mr-8" />
           </a>
 
           <a href="https://leetcode.com/pranjal616/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={leetcode} // Replace with the actual path to your GitHub image
-              alt="leetcode"
-              className="w-12 h-12 rounded-lg mr-8" // Added margin-right (mr-2) for spacing
-            />
+            <img src={leetcode} alt="leetcode" className="w-12 h-12 rounded-lg mr-8" />
           </a>
 
           <a href="https://www.hackerrank.com/pranjalpimpale4" target="_blank" rel="noopener noreferrer">
-            <img
-              src={hackerrank} // Replace with the actual path to your GitHub image
-              alt="hackerrank"
-              className="w-12 h-12 rounded-lg mr-8" // Added margin-right (mr-2) for spacing
-            />
+            <img src={hackerrank} alt="hackerrank" className="w-12 h-12 rounded-lg mr-8" />
           </a>
 
           <a href="https://www.instagram.com/pranjalpimpale/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={insta} // Replace with the actual path to your GitHub image
-              alt="insta"
-              className="w-12 h-12 rounded-lg mr-8" // Added margin-right (mr-2) for spacing
-            />
+            <img src={insta} alt="insta" className="w-12 h-12 rounded-lg mr-8" />
           </a>
         </div>
-
-
-
-
-
-
-
       </motion.div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
+      <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
         <EarthCanvas />
       </motion.div>
-      
-
-      
     </div>
-
-    
   );
 };
 

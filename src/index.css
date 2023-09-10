@@ -19,6 +19,26 @@
   display: block;
 }
 
+/* Add this to your CSS stylesheet */
+.enlarged-card {
+  transform: scale(1.05); /* You can adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Adjust the duration as needed */
+  z-index: 1; /* Ensures the card is on top of others when enlarged */
+}
+
+.scale-105 {
+  transform: scale(1.05);
+  transition: transform 0.1s ease;
+}
+
+.project-card {
+  transition: transform 0.1s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(

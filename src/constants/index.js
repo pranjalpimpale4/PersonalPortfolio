@@ -194,11 +194,11 @@ const projects = [
       },
       {
         name: "Kiwi",
-        color: "green-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "Python",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
     image: chatbot,
@@ -216,7 +216,7 @@ const projects = [
       },
       {
         name: "Firebase",
-        color: "green-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
     image: ChargeEasy,
@@ -234,11 +234,11 @@ const projects = [
       },
       {
         name: "Python",
-        color: "green-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "MATLAB",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
     image: cfv,
