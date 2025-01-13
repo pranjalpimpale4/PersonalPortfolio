@@ -34,6 +34,7 @@ import starbucks from "./company/starbucks.png";
 import siemens from "./company/siemens.png";
 import SPIT from "./company/SPIT.png";
 import tesla from "./company/tesla.png";
+import RoundTechSquare from "./company/RoundTechSquare.png";
 
 import chatbot from "./chatbot.png";
 import ChargeEasy from "./ChargeEasy.png";
@@ -88,4 +89,5 @@ export {
   mail,
   phone,
   linkedin,
+  RoundTechSquare,
 };
